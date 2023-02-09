@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul, li, a {
+	list-style: none;
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*GENERALITES---------------------------------------------------------------------*/
+body {
+	font-family: 'Maven Pro', sans-serif;
+	background-color: #131313;
+}
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*MENU-----------------------------------------------------------------------*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.5em;
+}
+.menudesktop {
+	padding-top: 2.5em;
+}
+
+nav ul li a {
+	color: white;
+	margin: 1em;
+}
+.artistes {
+	background-color: white;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin-top: 1em;
+}
+.artistes h2 {
+margin-left: 0.7em;
+}
+.artistes p {
+	text-align: center;
+}
+#artistes {
+	max-width: 98%;
+	justify-content: center;
+	margin: 0 auto;
+}
+#artistes img {
+	width: 100%;
+	padding-top: 1em;
+}
+main {
+	background-color: #303030;
+	color: white;
+}
+article {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	padding-top: 1.5em;
+}
+article p, h3 {
+	text-align: justify;
+	margin: 0.5em;
+}
+section {
+	justify-content: space-around;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+section h2 {
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+.video {
+    position: relative;
+	padding-bottom: 56.25%;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+aside {
+	color: white;
+	justify-content: space-between;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.socialmedia {
+	text-align: center;
+}
+.socialmedia i {
+	color: white;
+	padding-top: 1em;
+	font-size: 1.5em;
+}
+.newsletter {
+	padding-top: 0.8em;
+}
+.newsletter p {
+	margin-right: 1em;
+	padding-top: 0.6em;
+}
+aside form input {
+	background-color: #303030;
+	padding: 1em 7em 1em 1em;
+	border: none;
+	width: 150px;
+}
+
+aside form button {
+	border: none;
+	background-color: transparent;
+	vertical-align: middle ;
+}
+aside form i {
+	color: white;
+	font-size: 2em;
+}
+
+footer {
+	background-color: #303030;
+	justify-content: space-between;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	
+}
+footer p {
+	color: white;
+	margin-right: 1em;
+	vertical-align: middle;
+	padding-top: 0.5em;
+}
+
+/*SCROLL DYNAMIQUE-------------------------------------------------------------------*/
+ /*** --- BACK TO TOP --- ***/
+.m-d-none{
+	display: none;
+}
+.back-to-top{
+  --mcolor1: #fff; /* Couleur claire */
+  --mcolor2: #2b302a; /* Couleur foncée */
+  align-items: center;
+  background: var(--mcolor1);
+  box-shadow: 1px 1px 10px var(--mcolor1);
+  bottom: 10px; /* Position de l'élement par rapport au bord du bas */
+  color: var(--mcolor2) !important;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px; /* Taille de la typo */
+  height: 35px; /* Hauteur du bloc */
+  justify-content: center;
+  opacity: 0;
+  position: fixed;
+  right: 10px; /* Position de l'élement par rapport au bord droit */
+  text-decoration: none !important;
+  transition: all ease-in-out .5s;
+  width: 35px; /* Largeur du bloc */
+  border-radius: 50%;
+  z-index: 99;
+}
+.back-to-top.show{
+  opacity: 1 !important;
+}
+.back-to-top.anim-show{
+  animation: 1s showBtnTop; /* 1s = la vitesse de l'animation */
+  opacity: 0;
+}
+.back-to-top.anim-hide{
+  animation: 1s hideBtnTop; /* 1s = la vitesse de l'animation */
+  opacity: 1;
+}
+.back-to-top:hover{
+  background: var(--mcolor2);
+  color: var(--mcolor1) !important;
+  text-decoration: none !important;
+  transition: all ease-in-out .5s; /* 0.5s = la vitesse de la transition */
+}
+/* Animation qui fait apparaitre la flèche en fondu au scroll */
+@keyframes showBtnTop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Animation qui fait disparaitre la flèche en fondu au scroll */
+@keyframes hideBtnTop {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*RESPONSIVE DESIGN MOBILE----------------------------------------------------------*/
+@media screen and (max-width: 48em) {
+	.wrapper {
+		width: 95%;
+	}
+	nav {
+		padding-top: 0;
+	}
+	.logo {
+		width: 100%;
+		padding-top: 1.5em;
+	}
+	.menudesktop {
+		padding-bottom: 1em;
+	}
+	.artisteImg {
+		width: 80%;
+		margin: 0 auto;
+	}
+	article h3 {
+	padding-top: 0.5em;
+	}
+	aside {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.map {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.video {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.h2video {
+		padding-top: 1em;
+	}
+	.socialmedia i {
+		padding-bottom: 1em;
+	}
+	.newsletter {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.newsletter p {
+		padding-bottom: 1em;
+	}
+	footer p {
+		margin-left: 1em;
+		padding-top: 1.5em;
+	}
+}  	
+
+/*RESPONSIVE DESIGN DESKTOP---------------------------------------------------------*/
+@media screen and (min-width: 48em) {
+	.flex {
+        display: flex;
+    }
+	.map {
+		width: 450px;
+	}
+	.video {
+		width: 560px;
+	}
+}  	

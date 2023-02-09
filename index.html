@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<title>Salle de concert</title>
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+		crossorigin="anonymous"></script>
+		<script src="../dist/slippry.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/af07974c8c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../dist/slippry.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="flex">
+				<a href="index.html" title="retour accueil">
+					<img class="logo" src="img/logoleft.jpeg" alt="logo">  
+				</a>
+				<ul class="flex menudesktop">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="#">Programmation</a></li>
+					<li><a href="#">Evénement</a></li>
+					<li><a href="#">Billeterie</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<a href="index.html" title="retour accueil">
+					<img class="logo" src="img/logoright.jpg" alt="logo">
+				</a>	
+			</nav>	  
+			<header>
+				<ul id="slider">
+					<li><a href="#slide1"><img src="img/slide1.jpg" alt="20 décembre 2022 <a href='https://cefii.fr/' target='_blank' rel='noreferrer nooperer'>En savoir plus</a>"></a></li>
+					<li><a href="#slide2"><img src="img/slide2.jpg" alt="31 décembre 2022 <a href='https://cefii.fr/' target='_blank'rel='noreferrer nooperer'>En savoir plus</a>"></a></li>
+					<li><a href="#slide3"><img src="img/slide3.jpg" alt="10 janvier 2023 <a href='https://cefii.fr/' target='_blank' rel='noreferrer nooperer'>En savoir plus</a>"></a></li>
+				</ul>
+			</header>
+			<div class="artistes">
+				<h2>&Agrave; NE SURTOUT PAS MANQUER</h2>
+				<div class="flex" id="artistes">
+					<div class="artisteImg"><img src="img/artiste1.jpg" alt="femme qui chante"><p>Artiste 1</p></div>
+					<div class="artisteImg"><img src="img/artiste2.jpg" alt="homme qui chante"><p>Artiste 2</p></div>
+					<div class="artisteImg"><img src="img/artiste3.jpg" alt="homme qui chante"><p>Artiste 3</p></div>
+					<div class="artisteImg"><img src="img/artiste4.jpg" alt="femme qui chante"><p>Artiste 4</p></div>
+				</div>
+			</div>
+			<main>
+				<article class="flex">
+					<div>
+						<h3>Actu 1</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Praesentium facere distinctio quod nam provident? Aliquam soluta temporibus repellat sunt quibusdam 
+							adipisci fugiat suscipit debitis labore nisi, quidem assumenda nam accusantium!
+						</p>
+					</div>
+					<div>
+						<h3>Actu 2</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Praesentium facere distinctio quod nam provident? Aliquam soluta temporibus repellat sunt quibusdam 
+							adipisci fugiat suscipit debitis labore nisi, quidem assumenda nam accusantium!
+						</p>
+					</div>
+					<div>
+						<h3>Actu 3</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Praesentium facere distinctio quod nam provident? Aliquam soluta temporibus repellat sunt quibusdam 
+							adipisci fugiat suscipit debitis labore nisi, quidem assumenda nam accusantium!
+						</p>
+					</div>
+					<div>
+						<h3>Actu 4</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Praesentium facere distinctio quod nam provident? Aliquam soluta temporibus repellat sunt quibusdam 
+							adipisci fugiat suscipit debitis labore nisi, quidem assumenda nam accusantium!
+						</p>
+					</div>
+				</article>
+				<section class="flex">
+					<div>
+						<h2>NOUS TROUVER</h2>
+						<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167918.40056340562!2d2.060011232812498!3d48.882518600000004!2m3!
+						1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e440fc87efb%3A0x87e5341a95c656ca!2sLa%20Cigale!5e0!3m2!1sfr!2sfr!4v1669502017327!5m2!1sfr!2sfr" 
+						width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<div>
+						<h2 class="h2video">EN LIVE</h2>
+						<div class="video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/a_FPOTyL7h4" title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</section>
+			</main>
+			<aside class="flex">
+				<div>
+					<p>Partagez vos meilleurs moments</p>
+					<div class="socialmedia">
+						<a href="#" title="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+						<a href="#" title="facebook"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a> 
+					</div>
+				</div>
+				<div class="flex newsletter">
+					<p>Restez informer sur les actualités</p>
+					<form action="">
+						<input type="email" name="email" id="email" placeholder="Renseignez votre e-mail" required>
+                    	<button type="submit"><i class="fa-solid fa-circle-right"></i></button>
+					</form>
+				</div>
+			</aside>
+			<footer class="flex">
+				<nav>
+					<ul class="flex">
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">CGV</a></li>
+						<li><a href="#">Politique de confidentialité</a></li>
+						<li><a href="#">Mentions légales</a></li>
+						<li><a href="#">Plan du site</a></li>
+					</ul>
+				</nav>
+				<div>
+				<p>&copy; Copyright 2019 - Tous droits réservés</p>
+				</div>
+			</footer>	
+		</div>
+		<a href="#" class="back-to-top m-d-none"><i class="fa-solid fa-angles-up"></i></a>
+	</body>
+</html>
